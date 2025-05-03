@@ -14,11 +14,19 @@
 				packages = with pkgs; [
 					(emacs.pkgs.withPackages (epkgs: with epkgs; [
 						sly
+						evil
+
+						white-sand-theme
 					]))
 
 					emacs
 					sbcl
+
+					fira-code
 				];
+				shellHook = ''
+					export LISP_PATH="${pkgs.sbcl}/bin/sbcl"
+				'';
 			};
 		};
 }
