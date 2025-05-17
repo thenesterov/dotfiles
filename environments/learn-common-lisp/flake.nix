@@ -9,21 +9,17 @@
 		let 
 			system = "x86_64-linux";
 			pkgs = inputs.nixpkgs.legacyPackages.${system};
+
+			emacsPkgs = import ../emacs.nix { inherit pkgs; };
 		in {
 			devShells.${system}.default = pkgs.mkShell {
-				packages = with pkgs; [
+				packages = emacsPkgs ++ (with pkgs; [
 					(emacs.pkgs.withPackages (epkgs: with epkgs; [
 						sly
-						evil
-
-						white-sand-theme
 					]))
 
-					emacs
 					sbcl
-
-					fira-code
-				];
+				]);
 				shellHook = ''
 					export LISP_PATH="${pkgs.sbcl}/bin/sbcl"
 				'';
