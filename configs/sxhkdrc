@@ -5,11 +5,11 @@
 
 # telegram
 super + o ; t
-    wmctrl -x -a telegram.64Gram
+    wmctrl -x -a telegram.64Gram || tg
 
 # web-browser
 super + o ; b
-    wmctrl -x -a Navigator.zen
+    wmctrl -x -a Navigator.zen || zen
 
 # code editor
 super + o ; c
@@ -21,9 +21,9 @@ super + o ; g
 
 # obsidian
 super + o ; o
-    wmctrl -x -a obsidian.obsidian
+    wmctrl -x -a obsidian.obsidian || obsidian
 
 # postman
 super + o ; p
-    wmctrl -x -a postman.Postman
+    wmctrl -x -a postman.Postman || postman
 
