@@ -27,3 +27,7 @@ super + o ; o
 super + o ; p
     wmctrl -x -a postman.Postman || postman
 
+# warpd
+super + c
+	warpd --hint
+
