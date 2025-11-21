@@ -9,7 +9,7 @@ super + o ; t
 
 # web-browser
 super + o ; b
-    wmctrl -x -a Navigator.zen || zen
+    wmctrl -x -a Navigator.firefox || firefox
 
 # code editor
 super + o ; c
