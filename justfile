@@ -15,3 +15,6 @@ default:
 @fnlm *ARGS:
 	cd fnlm && lua fmf/tool/tool.lua {{ARGS}}
 
+@update-nvim-config:
+	just fnlm bundle iva-vim-config > configs/nvim/init.lua
+
