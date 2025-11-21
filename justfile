@@ -10,5 +10,5 @@ default:
 			TERM=$TERM \
 			DISPLAY=$DISPLAY \
 			XAUTHORITY=$XAUTHORITY \
-			bash -c "emacs -l {{justfile_directory()}}/.emacs {{filepath}}"
+			bash -c "emacs -l {{justfile_directory()}}/configs/.emacs {{filepath}}"
 

@@ -15,6 +15,9 @@
 ;; https://github.com/tonsky/FiraCode/blob/master/LICENSE
 (set-frame-font "Fira Code 12" nil t)
 
+;; Autocomplete
+(global-company-mode 1)
+
 ;; Vim mode
 (evil-mode 1)
 
